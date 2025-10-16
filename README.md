@@ -8,9 +8,9 @@
 3. Start Command: `python app.py`
 
 ## 환경변수(Environment Variables)
-- TELEGRAM_TOKEN = BotFather에서 발급받은 텔레그램 토큰
-- NAVER_CLIENT_ID = 네이버 개발자센터 Client ID
-- NAVER_CLIENT_SECRET = 네이버 개발자센터 Secret Key
+- TELEGRAM_TOKEN = 8356788385:AAFWMEmKluIgjMec00IPgcmNOJ9RLuc9-No
+- NAVER_CLIENT_ID = _ugeb0Ht1sXN8OCPAZdh
+- NAVER_CLIENT_SECRET = rMmz1cisV2
 
 ## 주요 명령어
 - `/start` : 봇 시작
@@ -18,3 +18,4 @@
 - `/list` : 등록 키워드 보기
 - `/remove 키워드` : 키워드 삭제
 - `/interval 분` : 뉴스 조회 주기 설정
+
