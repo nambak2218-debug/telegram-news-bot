@@ -22,9 +22,9 @@ from telegram import Update
 from telegram.constants import ParseMode
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 
-TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
-NAVER_CLIENT_ID = os.getenv("NAVER_CLIENT_ID")
-NAVER_CLIENT_SECRET = os.getenv("NAVER_CLIENT_SECRET")
+TELEGRAM_TOKEN = os.getenv("8356788385:AAFWMEmKluIgjMec00IPgcmNOJ9RLuc9-No")
+NAVER_CLIENT_ID = os.getenv("_ugeb0Ht1sXN8OCPAZdh")
+NAVER_CLIENT_SECRET = os.getenv("rMmz1cisV2")
 
 assert TELEGRAM_TOKEN, "TELEGRAM_TOKEN missing"
 assert NAVER_CLIENT_ID and NAVER_CLIENT_SECRET, "NAVER client credentials missing"
@@ -245,3 +245,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
