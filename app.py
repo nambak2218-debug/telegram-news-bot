@@ -1,7 +1,3 @@
-# app.py
-# 텔레그램 + 네이버 뉴스 실시간 알리미 봇
-# (코드는 이전 메시지에서 준 것 그대로 붙여넣기)
-%%writefile app.py
 import os
 import re
 import time
@@ -22,9 +18,9 @@ from telegram import Update
 from telegram.constants import ParseMode
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 
-TELEGRAM_TOKEN = os.getenv("8356788385:AAFWMEmKluIgjMec00IPgcmNOJ9RLuc9-No")
-NAVER_CLIENT_ID = os.getenv("_ugeb0Ht1sXN8OCPAZdh")
-NAVER_CLIENT_SECRET = os.getenv("rMmz1cisV2")
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
+NAVER_CLIENT_ID = os.getenv("NAVER_CLIENT_ID")
+NAVER_CLIENT_SECRET = os.getenv("NAVER_CLIENT_SECRET")
 
 assert TELEGRAM_TOKEN, "TELEGRAM_TOKEN missing"
 assert NAVER_CLIENT_ID and NAVER_CLIENT_SECRET, "NAVER client credentials missing"
@@ -240,9 +236,8 @@ def main():
     app.add_handler(CommandHandler("remove", remove_keyword))
     app.add_handler(CommandHandler("interval", set_interval))
     build_scheduler(app)
-    print("✅ Bot polling started. 이 셀을 계속 실행 상태로 두세요.")
+    print("✅ Bot polling started.")
     app.run_polling(close_loop=False)
 
 if __name__ == "__main__":
     main()
-
